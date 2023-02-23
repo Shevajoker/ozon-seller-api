@@ -1,0 +1,50 @@
+
+
+	<table>
+		<tr>
+			<th>NAME</th>
+			<th>idAnrex</th>
+			<th>marketingPrice</th>
+			<th>minOzonPrice</th>
+			<th>oldPrice</th>
+			<th>premiumPrice</th>
+			<th>price</th>
+			<th>recommendedPrice</th>
+			<th>minPrice</th>
+		</tr>
+		<tr th:each="prod : ${ozonProducts}">
+			<td th:text="${prod.name}"></td>
+			<td th:text="${prod.idAnrex}"></td>
+			<td th:text="${prod.marketingPrice}"></td>
+			<td th:text="${prod.minOzonPrice}"></td>
+			<td th:text="${prod.oldPrice}"></td>
+			<td th:text="${prod.premiumPrice}"></td>
+			<td th:text="${prod.price}"></td>
+			<td th:text="${prod.recommendedPrice}"></td>
+			<td th:text="${prod.minPrice}"></td>
+		
+		</tr>
+	</table>
+
+
+
+<br>
+<br>
+<br>
+
+<table border="1">
+		<tr>
+			<th>model</th>
+			<th>oldPrice</th>
+			<th>price</th>
+			
+		</tr>
+		<tr th:each="prod : ${listAnrex}">
+			<td th:text="${prod.model}"></td>
+			<td th:text="${prod.oldPrice}"></td>
+			<td th:text="${prod.price}"></td>
+			
+		</tr>
+	</table>
+	
+	

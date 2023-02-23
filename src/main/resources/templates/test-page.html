@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>main page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style>
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+		th,
+		td {
+			padding: 15px;
+		}
+
+		.ozon {
+			background-color: aqua;
+		}
+
+		.anrex {
+			background-color: palegreen;
+		}
+	</style>
+</head>
+
+<body>
+
+	<p>Welcome to MAIN!</p>
+
+
+	<form enctype="multipart/form-data" method="post">
+		<p><input type="file" name="f">
+			<input type="submit" value="Отправить">
+		</p>
+	</form>
+
+
+	<hr>
+	<br>
+	<hr>
+	<br>
+
+	<h2>Таблица сравнения</h2>
+
+	<table border="1">
+		<tr>
+			<th>#</th>
+			<th>NAME</th>
+			<th class="ozon">idAnrex</th>
+			<th class="ozon">OZON <br> marketingPrice</thclass="ozon">
+			<th class="ozon">minOzonPrice</th>
+			<th class="ozon">oldPrice</th>
+			<th class="ozon">premiumPrice</th>
+			<th class="ozon">price</th>
+			<th class="ozon">recommendedPrice</th>
+			<th class="ozon">minPrice</th>
+
+
+			<th class="anrex">oldPrice</th>
+			<th class="anrex">price</th>
+
+			<th class="total">price</th>
+
+		</tr>
+		
+		<tr th:each="prod, iter : ${map}">
+			<td th:text="${iter.count}"></td>
+			<td th:text="${prod.key.name}"></td>
+			<td class="ozon" th:text="${prod.key.idAnrex}"></td>
+			<td class="ozon" th:text="${prod.key.marketingPrice}"></td>
+			<td class="ozon" th:text="${prod.key.minOzonPrice}"></td>
+			<td class="ozon" th:text="${prod.key.oldPrice}"></td>
+			<td class="ozon" th:text="${prod.key.premiumPrice}"></td>
+			<td class="ozon" th:text="${prod.key.price}"></td>
+			<td class="ozon" th:text="${prod.key.recommendedPrice}"></td>
+			<td class="ozon" th:text="${prod.key.minPrice}"></td>
+
+
+			<td class="anrex" th:text="${prod.value.oldPrice}"></td>
+			<td class="anrex" th:text="${prod.value.price}"></td>
+
+			<td class="total" th:text="${prod.key.price - prod.value.price}"></td>
+		</tr>
+	</table>
+
+
+
+</body>
+
+</html>

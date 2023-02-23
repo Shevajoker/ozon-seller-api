@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2023-02-13 23:06:19">
+	<shop>
+		<name>anrex Белорусская мебель</name>
+		<company>anrex Белорусская мебель</company>
+		<url>https://anrex.info</url>
+		<platform>BSM/Yandex/Market</platform>
+		<version>1.1.2</version>
+		<categories>
+			<category id="1675">РАСПРОДАЖА</category>
+			<category id="1628">Коллекции</category>
+			<category id="1702" parentId="1628">TORINO</category>
+			<category id="1700" parentId="1628">MODENA</category>
+			<category id="1707" parentId="1628">FABIO</category>
+			<category id="1701" parentId="1628">ORLANDO</category>
+			<category id="1678" parentId="1628">BJORK</category>
+			<category id="1639" parentId="1628">JAZZ</category>
+			<category id="1655" parentId="1628">TAYLOR</category>
+			<category id="1724" parentId="1628">BRYCE</category>
+			<category id="1726" parentId="1628">BOSCO</category>
+			<category id="1634" parentId="1628">TIFFANY (Вудлайн Кремовый)</category>
+			<category id="1721" parentId="1628">RICHE ESTA</category>
+			<category id="1718" parentId="1628">SCANDY</category>
+			<category id="1719" parentId="1628">SOMMA</category>
+			<category id="1676" parentId="1628">TIFFANY (Орех элия темный)</category>
+			<category id="1723" parentId="1628">WHITEBLACK</category>
+			<category id="1722" parentId="1628">Модульные шкафы</category>
+			<category id="1727" parentId="1628">VALENCIA</category>
+			<category id="1642" parentId="1628">CITY</category>
+			<category id="1632" parentId="1628">OLIVIA</category>
+			<category id="1666" parentId="1628">TAURUS</category>
+			<category id="1637" parentId="1628">DIESEL</category>
+			<category id="1638" parentId="1628">MAGELLAN (Сосна Винтаж)</category>
+			<category id="1601">Прихожие</category>
+			<category id="1603" parentId="1601">Зеркала в прихожую</category>
+			<category id="1604" parentId="1601">Комоды в прихожую</category>
+			<category id="1606" parentId="1601">Тумбы для обуви</category>
+			<category id="1607" parentId="1601">Шкафы в прихожую</category>
+			<category id="1602" parentId="1601">Вешалки</category>
+			<category id="1564">Гостиные</category>
+			<category id="1565" parentId="1564">Журнальные столы</category>
+			<category id="1568" parentId="1564">Полки настенные</category>
+			<category id="1569" parentId="1564">Тумбы под ТВ</category>
+			<category id="1570" parentId="1564">Шкаф открытые</category>
+			<category id="1571" parentId="1564">Шкаф-витрины</category>
+			<category id="1572" parentId="1564">Шкафы в гостиную</category>
+			<category id="1566" parentId="1564">Комоды в гостиную</category>
+			<category id="1725">Диваны</category>
+			<category id="1608">Спальни</category>
+			<category id="1609" parentId="1608">Зеркала для спальни</category>
+			<category id="1610" parentId="1608">Комоды в спальню</category>
+			<category id="1611" parentId="1608">Кровати</category>
+			<category id="1613" parentId="1608">Полки настенные</category>
+			<category id="1614" parentId="1608">Туалетные столики</category>
+			<category id="1615" parentId="1608">Тумбы прикроватные</category>
+			<category id="1616" parentId="1608">Шкафы в спальню</category>
+			<category id="1593">Молодежные</category>
+			<category id="1596" parentId="1593">Письменные столы</category>
+			<category id="1598" parentId="1593">Тумбы в молодежную</category>
+			<category id="1599" parentId="1593">Шкафы в молодежную</category>
+			<category id="1660">Стулья</category>
+			<category id="1650">Кухни</category>
+			<category id="1651" parentId="1650">AVENUE</category>
+			<category id="1652" parentId="1650">TAPIO (Дуб полярный)</category>
+			<category id="1679" parentId="1650">ALESIA</category>
+			<category id="1681" parentId="1679">ALESIA СОСНА ВИНТАЖ</category>
+			<category id="1657" parentId="1650">BOSTON / MADISON</category>
+			<category id="1682" parentId="1650">GRAND</category>
+			<category id="1683" parentId="1682">GARND ДУБ ЙОРК СЕРЫЙ</category>
+			<category id="1687" parentId="1650">TAPIO ДУБ СНЕЖНЫЙ</category>
+			<category id="1688" parentId="1650">VILMA</category>
+			<category id="1689" parentId="1688">VILMA БЕЛЫЙ</category>
+			<category id="1690" parentId="1688">VILMA КАПУЧИНО</category>
+			<category id="1692" parentId="1650">Корзины, вкладыши</category>
+			<category id="1694" parentId="1650">Ручки</category>
+			<category id="1695" parentId="1650">Скиналь</category>
+			<category id="1696" parentId="1650">Столешницы</category>
+			<category id="1703" parentId="1650">Полки</category>
+			<category id="1697" parentId="1650">Фурнитура для столешниц и скиналь</category>
+			<category id="1698" parentId="1650">Цоколь</category>
+			<category id="1585">Кровати</category>
+			<category id="1588" parentId="1585">Кровати 140х200 с подъемником</category>
+			<category id="1654">Подсветка</category>
+			<category id="1580">Комоды и тумбы</category>
+			<category id="1582" parentId="1580">Тумбы под ТВ</category>
+			<category id="1583" parentId="1580">Тумбы прикроватные</category>
+			<category id="1617">Столы</category>
+			<category id="1619" parentId="1617">Обеденные столы</category>
+			<category id="1620" parentId="1617">Письменные столы</category>
+			<category id="1720">Матрасы</category>
+			<category id="1728" parentId="1628">PROVENCE</category>
+			<category id="1729" parentId="1628">MODERN</category>
+			<category id="1633" parentId="1628">OSKAR</category>
+			<category id="1732" parentId="1628">Шкафы-купе</category>
+			<category id="1629" parentId="1628">JAGGER</category>
+			<category id="1731" parentId="1628">DOORSET</category>
+		</categories>
+		<currencies>
+			<currency id="RUR" rate="1" />
+		</currencies>
+		<delivery-options>
+			<option cost="1400" days="3-5" />
+		</delivery-options>
+		<pickup-options>
+			<option cost="0" days="0" />
+		</pickup-options>
+		<offers>
+			<offer id="18730" type="vendor.model" available="true">
+				<url>https://anrex.info/catalog/gostinye/zhurnalnye_stoly/18730/</url>
+				<price>5199</price>
+				<oldprice>6399</oldprice>
+				<currencyId>RUR</currencyId>
+				<categoryId>1565</categoryId>
+				<picture>https://anrex.info/upload/iblock/f4c/f4c0ffcadf651aaa56617d8ba9253a47.jpg</picture>
+				<pickup>true</pickup>
+				<vendor>Anrex</vendor>
+				<model>Стол журнальный, JAZZ, цвет Каштан найроби/Оникс</model>
+				<vendorCode>656007</vendorCode>
+				<typePrefix>Журнальные столы</typePrefix>
+				<manufacturer_warranty>true</manufacturer_warranty>
+				<country_of_origin>Республика Беларусь</country_of_origin>
+				<param name="Гарантия">24 месяца</param>
+				<param name="Цвет">Каштан найроби/Оникс</param>
+				<param name="name">Стол журнальный, JAZZ, цвет Каштан найроби/Оникс</param>
+				<param name="Материал">ДСП ламинированная</param>
+				<weight>21.52</weight>
+				<dimensions>120/49,8/60</dimensions>
+			</offer>
+			<offer id="18672" type="vendor.model" available="true">
+				<url>https://anrex.info/catalog/gostinye/zhurnalnye_stoly/18672/</url>
+				<price>5499</price>
+				<oldprice>6899</oldprice>
+				<currencyId>RUR</currencyId>
+				<categoryId>1565</categoryId>
+				<picture>https://anrex.info/upload/iblock/841/8419a995fa8a962095e20d7876729769.jpg</picture>
+				<picture>https://anrex.info/upload/iblock/a17/a179d83c0db84fc5cce23c6c9613ac41.jpg</picture>
+				<pickup>true</pickup>
+				<vendor>Anrex</vendor>
+				<model>Стол журнальный, MAGELLAN, цвет Сосна винтаж</model>
+				<vendorCode>656370</vendorCode>
+				<typePrefix>Журнальные столы</typePrefix>
+				<manufacturer_warranty>true</manufacturer_warranty>
+				<country_of_origin>Республика Беларусь</country_of_origin>
+				<param name="Гарантия">24 месяца</param>
+				<param name="Цвет">Сосна винтаж</param>
+				<param name="name">Стол журнальный, MAGELLAN, цвет Сосна винтаж</param>
+				<param name="Материал">ДСП ламинированная/МДФ</param>
+				<weight>20.4</weight>
+				<dimensions>100/50/60</dimensions>
+			</offer>
+			<offer id="18558" type="vendor.model" available="true">
+				<url>https://anrex.info/catalog/gostinye/zhurnalnye_stoly/18558/</url>
+				<price>8599</price>
+				<oldprice>10599</oldprice>
+				<currencyId>RUR</currencyId>
+				<categoryId>1565</categoryId>
+				<picture>https://anrex.info/upload/iblock/aa2/aa2d96118685ef93502ec0b3d597c936.jpg</picture>
+				<picture>https://anrex.info/upload/iblock/52a/52a3d9013e8c8f11da39b541e28b3892.jpg</picture>
+				<pickup>true</pickup>
+				<vendor>Anrex</vendor>
+				<model>Стол журнальный/TYP 71, LINATE ,цвет белый/сонома трюфель</model>
+				<vendorCode>669755</vendorCode>
+				<typePrefix>Журнальные столы</typePrefix>
+				<description>Стол журнальный Линате /TYP 71. Незаурядность дизайна журнального стола обязательно привнесёт в интерьер индивидуальность и сделает его более привлекательным. Стол журнальный Линате/TYP 71 отличается от стола журнального Линате/ TYP 70 только шириной и глубиной. Конструкция элемента представляет собой соединение столешницы и ниши квадратной формы с помощью боковых панелей с накладками (цвет – дуб Трюфель, белый глянец), а также опоры – цокольные планки.&#13;
+Основные характеристики:&#13;
+-столешница, ниша – ЛДСП 16 мм (цвет - белый), боковые панели – ЛДСП 16 мм (цвет – дуб Трюфель), накладки – МДФ 19 мм (цвет – белый глянец);&#13;
+-ширина изделия – 750 мм;&#13;
+-опоры – ЛДСП 16 мм.</description>
+				<manufacturer_warranty>true</manufacturer_warranty>
+				<country_of_origin>Республика Беларусь</country_of_origin>
+				<param name="Гарантия">24 месяца</param>
+				<param name="Цвет">Белый / Сонома трюфель</param>
+				<param name="name">Стол журнальный/TYP 71, LINATE ,цвет белый/сонома трюфель</param>
+				<param name="Материал">ДСП ламинированная/МДФ</param>
+				<weight>23.82</weight>
+				<dimensions>75/39/75</dimensions>
+			</offer>
+			
+			
+		</offers>
+	</shop>
+</yml_catalog>
