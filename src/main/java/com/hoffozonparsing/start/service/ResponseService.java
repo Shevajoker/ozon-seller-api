@@ -21,7 +21,7 @@ import lombok.extern.slf4j.Slf4j;
 @Data
 @Slf4j
 public class ResponseService {
-	
+
 	final static private String CLIENT_ID = "14933";
 	final static private String API_KEY = "4c76975f-9f02-4c80-b6f3-aa2801438f23";
 	static RestTemplate rest = new RestTemplate();
@@ -36,7 +36,6 @@ public class ResponseService {
 
 		Map<String, Object> map = new HashMap<>();
 		map.put("offer_id", "");
-		
 
 		HttpEntity<Map<String, Object>> entity = new HttpEntity<>(map, headers);
 
@@ -49,20 +48,20 @@ public class ResponseService {
 
 		return response;
 	}
-	
+
 	public static ResponseEntity<String> getResponseAllOzonProducts(String url, List<AnrexProduct> anrexProducts) {
 
 		List<String> anrexIds = new ArrayList<>();
-		
+
 		for (AnrexProduct item : anrexProducts) {
-			if (item.getIdAnrex()!=null) {
-			anrexIds.add("\"" + item.getIdAnrex() + "\"");
+			if (item.getIdAnrex() != null) {
+				anrexIds.add("\"" + item.getIdAnrex() + "\"");
 			}
-			
+
 		}
 		String data = anrexIds.toString();
 		log.info("anrexIds - " + data);
-		
+
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
@@ -72,7 +71,6 @@ public class ResponseService {
 
 		Map<String, Object> map = new HashMap<>();
 		map.put("offer_id", data);
-		
 
 		HttpEntity<Map<String, Object>> entity = new HttpEntity<>(map, headers);
 		log.info("Map Entity - " + entity);
@@ -85,8 +83,8 @@ public class ResponseService {
 		log.info("RESPONSE-RETURN---- " + response);
 		return response;
 	}
-	
 
+	@Deprecated
 	public static ResponseEntity<String> getResponseAnrex(String url) {
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
