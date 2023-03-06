@@ -30,7 +30,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Controller
 @Slf4j
-public class RestControllerOzon {
+public class ControllerOzon {
 
 	final static private String URL_OZON = "https://api-seller.ozon.ru/v2/product/info";
 	final static private String URL_OZON_ALL_PRODUCT = "https://api-seller.ozon.ru/v2/product/info/list";
@@ -79,7 +79,7 @@ public class RestControllerOzon {
 		log.info("--Map<OzonProduct, AnrexProduct>--" + mapAO.toString());
 		model.addAttribute("map", mapAO);
 
-		return "test-page";
+		return "ozon-page";
 	}
 
 	

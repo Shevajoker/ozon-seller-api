@@ -16,9 +16,9 @@ public class MainController {
 	@GetMapping
 	public String main(Model model) {
 		
-		HoffParser parser = new HoffParser(); //7-23 8-50
-
-		model.addAttribute("name", parser.getContent("url"));
+//		HoffParser parser = new HoffParser(); //7-23 8-50
+//
+//		model.addAttribute("name", parser.getContent("url"));
 		
 		return "index";
 	}

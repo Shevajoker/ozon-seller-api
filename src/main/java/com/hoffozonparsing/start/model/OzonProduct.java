@@ -19,31 +19,41 @@ public class OzonProduct {
 	
 	private String name;
 	private String idAnrex; 
-	private String marketingPrice;
-	private String minOzonPrice;
-	private String oldPrice;
-	private String premiumPrice;
+	private int marketingPrice;
+	private int minOzonPrice;
+	private int oldPrice;
+	private int premiumPrice;
 	private int price;
-	private String recommendedPrice;
+	private int recommendedPrice;
 	private int minPrice;
 	
 	
 	public void setMinPrice(String minPrice) {
-		if (minPrice != null && minPrice.length()>5) {
-			minPrice = minPrice.substring(0, minPrice.length()-5);
-		this.minPrice = Integer.valueOf(minPrice);
-		} else {
-			this.minPrice = -1;
-		}
+		this.minPrice = Convert.convertStringPriceToInteger(minPrice);
 	}
 	
 	public void setPrice(String price) {
-		if (price != null && price.length()>5) {
-			price = price.substring(0, price.length()-5);
-		this.price = Integer.valueOf(price);
-		} else {
-			this.price = -1;
-		}
+		this.price = Convert.convertStringPriceToInteger(price);
+	}
+	
+	public void setRecommendedPrice(String recommendedPrice) {
+		this.recommendedPrice = Convert.convertStringPriceToInteger(recommendedPrice);
+	}
+	
+	public void setPremiumPrice(String premiumPrice) {
+		this.premiumPrice = Convert.convertStringPriceToInteger(premiumPrice);
+	}
+	
+	public void setOldPrice(String oldPrice) {
+		this.oldPrice = Convert.convertStringPriceToInteger(oldPrice);
+	}
+	
+	public void setMinOzonPrice(String minOzonPrice) {
+		this.minOzonPrice = Convert.convertStringPriceToInteger(minOzonPrice);
+	}
+	
+	public void setMarketingPrice(String marketingPrice) {
+		this.marketingPrice = Convert.convertStringPriceToInteger(marketingPrice);
 	}
 	
 }
