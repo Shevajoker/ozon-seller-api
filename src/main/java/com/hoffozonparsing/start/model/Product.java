@@ -1,6 +1,6 @@
 package com.hoffozonparsing.start.model;
 
-import jakarta.persistence.Entity;
+
 import lombok.Data;
 
 @Data

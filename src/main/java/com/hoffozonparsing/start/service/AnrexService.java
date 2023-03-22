@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,17 +24,15 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 
-import com.hoffozonparsing.start.dao.AnrexDao;
 import com.hoffozonparsing.start.model.AnrexProduct;
+import com.hoffozonparsing.start.repository.AnrexRepository;
 
-import lombok.extern.slf4j.Slf4j;
 
 @Service
-@Slf4j
 public class AnrexService {
 
 	@Autowired
-	AnrexDao anrexDao;
+	AnrexRepository anrexDao;
 
 	public List<AnrexProduct> getAnrexProductFromXml() {
 		String fileName = "static/xml/export.xml";
@@ -49,12 +46,12 @@ public class AnrexService {
 			
 			URL url = new URL("https://anrex.info/bitrix/catalog_export/export_J4G.xml");
 			Resource resource = new ClassPathResource(fileName);
-			log.info("--RESOURSE--" + resource.toString());
+			
 			InputStream inputStream = url.openStream();
 //			log.info("--RESOURS-GET-URL-TO-STRING--" + resource.getURL().toString());
 //			log.info("--RESOURS-resource.getURL().getPath()--" + resource.getURL().getPath());
 			
-			log.info("new ClassPathResource(\"static/xml/\").getPath() --- " + new ClassPathResource("static/xml/").getPath());
+			
 			
 			
 file = new File(resource.getURI());

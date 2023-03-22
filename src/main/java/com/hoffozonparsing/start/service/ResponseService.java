@@ -13,13 +13,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 import com.hoffozonparsing.start.model.AnrexProduct;
-import com.hoffozonparsing.start.model.OzonProduct;
 
 import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
 
 @Data
-@Slf4j
 public class ResponseService {
 
 	final static private String CLIENT_ID = "14933";
@@ -60,7 +57,6 @@ public class ResponseService {
 
 		}
 		String data = anrexIds.toString();
-		log.info("anrexIds - " + data);
 
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
@@ -73,14 +69,12 @@ public class ResponseService {
 		map.put("offer_id", data);
 
 		HttpEntity<Map<String, Object>> entity = new HttpEntity<>(map, headers);
-		log.info("Map Entity - " + entity);
 		ResponseEntity<String> response = null;
 		try {
 			response = rest.postForObject(url, entity, null, map);
 		} catch (Exception e) {
 
 		}
-		log.info("RESPONSE-RETURN---- " + response);
 		return response;
 	}
 

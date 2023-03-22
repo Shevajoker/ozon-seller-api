@@ -1,10 +1,10 @@
-package com.hoffozonparsing.start.dao;
+package com.hoffozonparsing.start.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.hoffozonparsing.start.model.OzonProduct;
 
-public interface OzonDao extends JpaRepository<OzonProduct, Long>{
+public interface OzonRepository extends JpaRepository<OzonProduct, Long>{
 
 	OzonProduct findByIdAnrex(String id_anrex);
 	

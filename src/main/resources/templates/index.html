@@ -20,7 +20,12 @@
     <h1>Добро пожаловать <b sec:authentication="name"></b></h1>
     <br>
   </row>
-    <a class="btn btn-danger" th:href="@{/logout}"> <i class="bi bi-x-circle"></i> Выход</a>
+ 
+    <a href="javascript: document.logoutForm.submit()" role="menuitem"  class="btn btn-danger"> <i class="bi bi-x-circle"></i> Выход</a>
+
+   <form name="logoutForm" th:action="@{/logout}" method="post" th:hidden="true">
+      <input hidden type="submit" value="Sign Out"/>
+   </form> 
     
         
     <a class="btn btn-primary" th:href="@{/info}"> <i class="bi bi-table"></i> Таблица сравнения с OZON</a>

@@ -11,15 +11,15 @@ import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.hoffozonparsing.start.dao.OzonDao;
 import com.hoffozonparsing.start.model.AnrexProduct;
 import com.hoffozonparsing.start.model.OzonProduct;
+import com.hoffozonparsing.start.repository.OzonRepository;
 
 @Service
 public class OzonService {
 
 	@Autowired
-	private OzonDao ozonDao;
+	private OzonRepository ozonDao;
 
 	public OzonProduct getOzonProduct(String responseBody, String idAnrex) {
 

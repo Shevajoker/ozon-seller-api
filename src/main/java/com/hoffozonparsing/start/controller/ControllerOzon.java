@@ -26,10 +26,9 @@ import com.hoffozonparsing.start.model.OzonProduct;
 import com.hoffozonparsing.start.service.AnrexService;
 import com.hoffozonparsing.start.service.OzonService;
 
-import lombok.extern.slf4j.Slf4j;
 
 @Controller
-@Slf4j
+
 public class ControllerOzon {
 
 	final static private String URL_OZON = "https://api-seller.ozon.ru/v2/product/info";
@@ -66,8 +65,8 @@ public class ControllerOzon {
 		map.put("offer_id", anrexIds);
 
 		HttpEntity<Object> httpEntity = new HttpEntity<Object>(map, httpHeaders);
-		ResponseEntity<String> responseEntity = restTemplate.postForEntity(URI.create(URL_OZON_ALL_PRODUCT), httpEntity, String.class);	
-		
+		//ResponseEntity<String> responseEntity = restTemplate.postForEntity(URI.create(URL_OZON_ALL_PRODUCT), httpEntity, String.class);	
+		ResponseEntity<String> responseEntity = restTemplate.postForEntity(URL_OZON_ALL_PRODUCT, httpEntity, String.class);
 		Map<OzonProduct, AnrexProduct> mapAO = new HashMap<>();
 		Map<String, OzonProduct> ozonProductsMap = ozonService.getAllOzonProducts(responseEntity.getBody(), anrexProducts);
 		
@@ -76,7 +75,7 @@ public class ControllerOzon {
 				mapAO.put(ozonProductsMap.get(item.getIdAnrex()), item);
 			}
 		}
-		log.info("--Map<OzonProduct, AnrexProduct>--" + mapAO.toString());
+	
 		model.addAttribute("map", mapAO);
 
 		return "ozon-page";
